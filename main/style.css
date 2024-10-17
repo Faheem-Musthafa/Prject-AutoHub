@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/images/vorsteiner_porsche_carrera_s_v_ff_101_carbon_graphite-1920x1080.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keep background fixed while scrolling */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+.Logo {
+    margin-bottom: 20px; /* Reduced from 100px */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.appointment-button {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.appointment-button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* For the right-aligned container (book section) */
+.btn-ap {
+    position: absolute;
+    top: 140px;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Text {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.explore-button {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.explore-button:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-ap1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    min-height: 100vh; /* Full viewport height for each section */
+    padding-top: 80px; /* Add top padding to prevent content from being hidden under the header */
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(187, 233, 219);
+}
+
+.about-content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ... (Services) ... */
+
+.services {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services h3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 5%;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(25% - 30px);
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments 
+@media (max-width: 1200px) {
+    .service-item {
+        width: calc(33.33% - 30px);
+    }
+}
+
+@media (max-width: 900px) {
+    .service-item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-item {
+        width: 100%;
+    }
+}*/
+
+/* ... (rest of the CSS remains the same) ... */
