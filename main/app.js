@@ -15,8 +15,3 @@ window.addEventListener('scroll', function() {
     
     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 }, false);
-
-        // Optional JavaScript can be added here
-        document.querySelector('.appointment-button').addEventListener('click', function() {
-            alert('Appointment booked!');
-        });

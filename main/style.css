@@ -9,7 +9,7 @@ body {
     background-image: url(/images/vorsteiner_porsche_carrera_s_v_ff_101_carbon_graphite-1920x1080.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Keep background fixed while scrolling */
+    background-attachment: fixed;
 }
 
 .header {
@@ -27,7 +27,7 @@ body {
 }
 
 .Logo {
-    margin-bottom: 20px; /* Reduced from 100px */
+    margin-bottom: 20px;
 }
 
 .navbar {
@@ -45,23 +45,22 @@ a {
 }
 
 .appointment-button {
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .appointment-button:hover {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
-/* For the right-aligned container (book section) */
 .btn-ap {
     position: absolute;
     top: 140px;
@@ -84,7 +83,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
 .explore-button {
@@ -96,7 +95,7 @@ a {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 .explore-button:hover {
@@ -113,32 +112,32 @@ a {
 }
 
 section {
-    min-height: 100vh; /* Full viewport height for each section */
-    padding-top: 80px; /* Add top padding to prevent content from being hidden under the header */
+    min-height: 100vh;
+    padding-top: 80px;
 }
 
 .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(187, 233, 219);
+    color: black;
+    background-color: #bbe9db;
 }
 
 .about-content {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 35px;
     text-align: center;
-    padding: 50px;
+    padding: 75px 100px;
 }
 
 .about-content h2 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .about-content p {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5;
     text-align: left;
 }
@@ -160,40 +159,54 @@ section {
     transform: scale(1.05);
 }
 
-
-/* ... (Services) ... */
-
 .services {
-    background-color: #f8f8f8;
+    background-color: white;
     padding: 80px 0;
     text-align: center;
 }
 
 .services h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Services Section Styling */
+.services {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: black;
     text-transform: uppercase;
 }
 
 .services h3 {
-    font-size: 25px;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 45px;
+    font-weight: 200;
+    margin-bottom: 5%;
+    color: black;
     text-transform: uppercase;
 }
 
+/* Services Container */
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
     padding: 0 5%;
+    gap: 8rem;
 }
 
+/* Service Item Styling */
 .service-item {
-    background-color: white;
-    border-radius: 10px;
+    background-color: #9aecd8;
+    border-radius: 20px;
     padding: 30px;
     width: calc(25% - 30px);
     min-width: 250px;
@@ -205,41 +218,111 @@ section {
     transform: translateY(-10px);
 }
 
-.service-item i {
-    font-size: 40px;
-    color: #007bff;
+/* Image Styling */
+.service-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as necessary */
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
+/* Service Item Title */
 .service-item h3 {
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 15px;
-    color: #333;
+    color: black;
 }
 
+/* Service Item Description */
 .service-item p {
-    font-size: 16px;
-    color: #666;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
     line-height: 1.5;
 }
 
-/* Responsive adjustments 
-@media (max-width: 1200px) {
-    .service-item {
-        width: calc(33.33% - 30px);
-    }
+
+.Advantage {
+    text-align: left;
+    padding: 0px 0px;
+    background-color: #f9f9f9;
 }
 
-@media (max-width: 900px) {
-    .service-item {
-        width: calc(50% - 30px);
-    }
+
+.A-content h1 {
+    font-size: 6rem;
+    margin-bottom: 10px;
+    color: #000000;
 }
 
-@media (max-width: 600px) {
-    .service-item {
-        width: 100%;
-    }
-}*/
+.A-content h2 {
+    font-size: 4rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
 
-/* ... (rest of the CSS remains the same) ... */
+.rectangle {
+    width: 75%; /* Adjust the width of the rectangle */
+    height: 150px; /* Adjust the height of the rectangle */
+    background-color: #7eddd8; /* Change to any desired color */
+    margin-left: 25%; /* Adds spacing between text and rectangle */
+}
+
+
+/* Advantage Section */
+.advantage-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.advantage-item {
+    position: relative;
+    width: 24%;
+    overflow: hidden;
+    border-radius: 8px; /* Smooth the corners */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Slight shadow for depth */
+}
+
+.advantage-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Keep image edges smooth */
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+.overlay:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
