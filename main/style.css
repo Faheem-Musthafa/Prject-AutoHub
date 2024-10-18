@@ -5,11 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.home    {
     background-image: url(/images/vorsteiner_porsche_carrera_s_v_ff_101_carbon_graphite-1920x1080.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .header {
@@ -247,15 +247,18 @@ section {
 
 .Advantage {
     text-align: left;
-    padding: 0px 0px;
+    padding: 50px 50px;
     background-color: #f9f9f9;
 }
 
+.A-content {
+    text-align: left;
+}
 
 .A-content h1 {
     font-size: 6rem;
     margin-bottom: 10px;
-    color: #000000;
+    color: #9c9c9c;
 }
 
 .A-content h2 {
@@ -264,35 +267,28 @@ section {
     margin-bottom: 40px;
 }
 
-.rectangle {
-    width: 75%; /* Adjust the width of the rectangle */
-    height: 150px; /* Adjust the height of the rectangle */
-    background-color: #7eddd8; /* Change to any desired color */
-    margin-left: 25%; /* Adds spacing between text and rectangle */
-}
-
-
 /* Advantage Section */
 .advantage-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 50px;
+    width: 100%;
 }
 
 .advantage-item {
     position: relative;
     width: 24%;
     overflow: hidden;
-    border-radius: 8px; /* Smooth the corners */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Slight shadow for depth */
+    /* border-radius: 8px;  */
+    /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.514);  */
 }
 
 .advantage-item img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; /* Keep image edges smooth */
+    /* border-radius: 8px;  */
 }
 
 /* Overlay Styling */
@@ -302,27 +298,429 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(196, 180, 180, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
     color: white;
     padding: 10px;
     opacity: 1; /* Always visible */
-    transition: opacity 0.3s ease-in-out;
-}
-
-.overlay h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.overlay p {
-    font-size: 1rem;
+    transition: opacity 1s ease-in-out;
 }
 
 .overlay:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+.overlay h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    
+}
+
+.overlay p {
+    font-size: 1.5rem;
+
+}
+
+
+/* Offer Sections */
+
+.offer-container {
+    text-align: center;
+    padding: 50px 0;
+    background:url(/images/vintage-sedan-car-driving-road_114579-5065.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.O-Content {
+    max-width: 800px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.O-Content h1 {
+    font-size: 10rem;
+    margin-top: 10%;
+}
+
+.O-Content h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    /* margin-bottom: 75%; */
+}
+
+.O-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 100%;
+    /* height: 100%; */
+    /* padding: 25% 0% 0% 0%; */
+}
+
+.step-item {
+    background-color: black;
+    width: calc(25% - 20px);
+    width: 20%;
+    height: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #f9f9f9 ;
+}
+
+.step-number {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.step-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.step-description {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Team Section */
+
+.Team {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.T-Content {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.T-Content h3 {
+    font-size: 4rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.T-Content h1 {
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: 20%;
+}
+
+.T-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-bottom: 2px solid #000000; 
+}
+
+.team-member-info {
+    padding: 20px;
+}
+
+/* Contact Us */
+
+.connect-section {
+    background-image: url('/images/bmw.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.connect-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.connect-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.connect-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-field {
+    background: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.form-field::placeholder {
+    color: #333;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section title styling */
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a504a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Testimonials Slider */
+  .testimonials-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+  }
+  
+  .testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-rating {
+    font-size: 18px;
+    color: #f39c12;
+  }
+  
+  /* Slider Controls */
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item .icon {
+    font-size: 50px;
+    color: #6a504a;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 18px;
+    color: #777;
+  }
+
+  /* Footer styling */
+.footer {
+    background-image: url('/images/Lamborghini\ Aventador\ LP\ 700-4.jpeg'); 
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footer-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+  }
+  
+  .footer-info-item {
+    text-align: center;
+  }
+  
+  .footer-info-title {
+    font-size: 16px;
+    color: #d2a57a; /* Light brown color */
+    margin-bottom: 10px;
+  }
+  
+  .footer-info-text {
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
